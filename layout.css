@@ -1,6 +1,13 @@
 header {
   text-align: center;
 }
+.produkt-header {
+  text-align: left;
+}
+.produkt-header img {
+  width: 30vw;
+  padding-top: 10px;
+}
 
 header img {
   width: 60vw;
@@ -44,13 +51,72 @@ h1 {
   color: red;
   text-decoration: underline;
 }
+.grid_produkt img {
+  width: 100%;
+}
+.grid_produkt {
+  font-family: "Times New Roman", Times, serif;
+}
+.grid_produkt h2 {
+  font-size: 2em;
+}
+.grid_produkt p {
+  margin-top: -15px;
+}
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1rem;
+}
+article > img {
+  width: 100%;
+}
+.str-beskrivelse {
+  background-color: rgb(225, 225, 225);
+  padding: 20px;
+  color: #484848;
+  text-align: center;
+}
+.str-beskrivelse h2 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  margin-top: -10px;
+}
+button {
+  padding: 10px;
+  padding-right: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
 @media (min-width: 1024px) {
   .grid-forside a {
     font-size: 30px;
     padding-bottom: 100px;
   }
+  .grid_produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   h1 {
     font-size: 4vw;
     margin-top: -40px;
+  }
+  .grid_produkt h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+
+  .grid_produkt :last-child {
+    padding-left: 50px;
+    margin-top: -50px;
+  }
+  .str-beskrivelse h2 {
+    font-size: 2.5rem;
+  }
+  .str-beskrivelse p {
+    font-size: 1rem;
   }
 }
